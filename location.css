@@ -1,0 +1,569 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+nav {
+    margin-top:2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .logo img{
+    height: 80px;
+    width:80px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 10px;
+  }
+  
+  .nav-links li a {
+    color:black;
+    text-decoration: none;
+    padding:20px 50px;
+   
+    transition: border-bottom 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    border-bottom: 2px solid yellow;
+  }
+  
+  .contact {
+    background-color: yellow;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+  
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+
+.location-container {
+    width: 100%;
+    height:500px;
+    margin: auto;
+    display: flex;
+    
+    color: black;
+    margin-top: 6em;
+  }
+  
+  .locationleft-side {
+    width:400px;
+    margin: auto;
+  }
+
+
+  .locationright-side {
+    width:600px;
+    margin: auto;
+  }
+
+  
+  
+  
+  .location-container h2 {
+    text-align: left;
+
+  }
+  
+  .location-container h3 {
+    font-size: 1.2em;
+  }
+  
+  .address {
+    color: #888;
+  }
+  
+  .working-hours {
+    margin-top: 20px;
+  }
+  
+  .day-time {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .day {
+    width: 100px;
+  }
+  
+  .time {
+    margin-left: 10px;
+  }
+  
+  .location-container a{
+    text-decoration: none;
+  }
+  
+  .get-directions {
+    margin-top: 20px;
+    background-color: #929DAC;
+    color:white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-icons {
+    margin-top: 20px;
+  }
+  
+  .phone-icon,
+  .mail-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .map {
+    margin-top: 20px;
+  }
+
+    .footer {
+      background-color: #505663;
+      color: #fff;
+      padding: 40px 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .footer-section {
+      flex: 1;
+      margin: 20px;
+      min-width: 200px;
+    }
+  
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #777;
+      padding-bottom: 5px;
+    }
+  
+    .footer-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-section ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  
+    .footer-section ul li a:hover {
+      color: #ffcc00;
+    }
+  
+    .footer-section.contact-info p {
+      margin: 10px 0;
+    }
+  
+    .footer-section.contact-info strong {
+      display: inline-block;
+      width: 70px;
+    }
+
+
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align:center;
+    }
+
+    .logo,
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links li a {
+        color:white;
+        text-decoration: none;
+        padding:8px 50px;
+        margin: 10px;
+}
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #505663;
+    min-width: 120px;
+    z-index: 1;
+    margin-left:11em;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+
+    .location-container {
+      width: 100%;
+      height: 300px;
+      margin: auto;
+      display: flex;
+      margin-top: 5em;
+      color: black;
+      font-family: 'Inter', sans-serif;
+    }
+  
+    .locationleft-side {
+      width: 400px;
+      margin: auto;
+      padding-left: 30px;
+    }
+  
+  
+    .locationright-side {
+      width: 600px;
+      margin: auto;
+    }
+  
+  
+  
+  
+    .location-container h2 {
+      text-align: left;
+      
+  
+    }
+  
+    .location-container h3 {
+      font-size: 1.2em;
+    }
+  
+    .address {
+      color: #888;
+      font-size: 10px;
+      width:150px;
+    }
+  
+    .working-hours {
+      margin-top: 20px;
+      font-size: 10px;
+      font-size: 10px;
+    }
+  
+    .day-time {
+      display: flex;
+      margin-bottom: 5px;
+      font-size: 10px;
+    }
+  
+    .day {
+      width: 100px;
+      font-size: 10px;
+    }
+  
+    .time {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+  
+    .location-container a {
+      text-decoration: none;
+    }
+  
+    .get-directions {
+      margin-top: 20px;
+      background-color: #929DAC;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .contact-icons {
+      margin-top: 20px;
+    }
+  
+    .phone-icon,
+    .mail-icon {
+      font-size: 24px;
+      margin-right: 10px;
+      text-decoration: none;
+      color: white;
+    }
+  
+    .map {
+      margin-top: 20px;
+      width: 200px;
+      height: 100px;
+    }
+  
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+
+    @media screen and (max-width: 480px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+      }
+  
+      .nav-links.active {
+        display: flex;
+      }
+  
+      .nav-links li {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+  
+      .logo,
+      .hamburger-menu {
+        display: block;
+      }
+  
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 50px;
+        margin: 10px;
+      }
+  
+      .dropdown {
+        position: relative;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #505663;
+        min-width: 120px;
+        z-index: 1;
+        margin-left: 11em;
+      }
+  
+      .dropdown:hover .dropdown-content {
+        display: block;
+  
+      }
+  
+      .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: white;
+      }
+  
+      .dropdown-content a:hover {
+        background-color: #555;
+      }
+  
+      .location-container {
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        margin-top: 5em;
+        color: black;
+        font-family: 'Inter', sans-serif;
+      }
+  
+      .locationleft-side {
+        width: 400px;
+        margin: auto;
+        padding-left: 30px;
+      }
+  
+  
+      .locationright-side {
+        width: 600px;
+        margin: auto;
+      }
+  
+  
+  
+  
+      .location-container h2 {
+        text-align: left;
+  
+  
+      }
+  
+      .location-container h3 {
+        font-size: 1.2em;
+      }
+  
+      .address {
+        color: #888;
+        font-size: 10px;
+        width: 150px;
+      }
+  
+      .working-hours {
+        margin-top: 20px;
+        font-size: 10px;
+        font-size: 10px;
+      }
+  
+      .day-time {
+        display: flex;
+        margin-bottom: 5px;
+        font-size: 10px;
+      }
+  
+      .day {
+        width: 100px;
+        font-size: 10px;
+      }
+  
+      .time {
+        margin-left: 10px;
+        font-size: 10px;
+      }
+  
+      .location-container a {
+        text-decoration: none;
+      }
+  
+      .get-directions {
+        margin-top: 20px;
+        background-color: #929DAC;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .contact-icons {
+        margin-top: 20px;
+      }
+  
+      .phone-icon,
+      .mail-icon {
+        font-size: 24px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: white;
+      }
+  
+      .map {
+        margin-top: 20px;
+        width: 200px;
+        height: 100px;
+      }
+  
+      iframe {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  

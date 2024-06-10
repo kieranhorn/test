@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Autorefinishes.html">Ürünler</a></li>
+        <li><a href="location.html">Konum</a></li>
+        <li><a href="gallary.html">Galeri</a></li>
+        <li><a href="contact.html" class="contact">İletişim</a></li>
+    </ul>
+</nav>
+<body>
+    <h1>Hakkımızda</h1>
+    <p>Egeli Boya olarak, sanayi ve otomotiv sektörüne yönelik sunduğumuz hizmetlerle sektörde önemli bir yer edinmiş
+    durumdayız. Genç Noroo ve Norton markalarının Ege Bölge satış, dağıtım ve uygulamasını üstlenen firmamız, uzun yıllara
+    dayanan deneyimiyle müşteri memnuniyetini her zaman en ön planda tutmaktadır.
+    
+    Müşterilerimize sunduğumuz kapsamlı hizmetler, yalnızca satış öncesi değil, satış sonrası süreçlerde de yanlarında
+    olmayı hedeflemektedir. Egeli Boya, yenilikçi yapısıyla sektörün gelişen ihtiyaçlarına hızlı çözümler sunarak,
+    müşterilerine her zaman en iyisini sunmayı ilke edinmiştir.
+    
+    Bu üstün hizmet anlayışımız, bizi diğer tedarikçilerden ayıran en önemli farkımızdır. Müşteri odaklı yaklaşımımız ve
+    kaliteli hizmet anlayışımız sayesinde, müşterilerimizin güvenini kazanarak onlarla uzun soluklu iş birlikleri kurmaktan
+    gurur duyuyoruz.
+    
+    Egeli Boya olarak, sektörün gereksinimlerine en hızlı şekilde yanıt vererek, müşteri memnuniyetini daima en üst seviyede
+    tutmayı amaçlıyoruz. Bizimle çalışan herkesin memnuniyetini sağlamak ve onların beklentilerini aşmak, en büyük
+    önceliğimizdir.</p>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Hızlı bağlantılar</h3>
+            <ul>
+                <li><a href="bayer.html">Ana Sayfa</a></li>
+                <li><a href="gallary.html">Galeri</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Veri ve Gizlilik</h3>
+            <ul>
+                <li><a href="#">Veri koruma</a></li>
+                <li><a href="#">Künye</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-info">
+            <h3>Bize ulaşın</h3>
+            <p><strong>Telefon:</strong> +90 (232) 365 3035</p>
+            <p><strong>FAX:</strong> +90(232) 365 3036</p>
+            <p><strong>Email:</strong> İnfo@egeliboya.com</p>
+            <p><strong>Adres:</strong> Karacaoğlan, 6172. Sk. No:1, 35070 Bornova/İzmir, Türkei</p>
+        </div>
+    </div>
+</footer>

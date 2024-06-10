@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallary</title>
+  <link rel="stylesheet" href="gallary.css">
+</head>
+
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="bayer.html">Ana Sayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+            <a href="Autorefinishes.html">Ürünler</a></li>
+                <li><a href="location.html">Konum</a></li>
+                <li><a href="gallary.html">Galeri</a></li>
+                <li><a href="contact.html" class="contact">İletişim</a></li>
+    </ul>
+</nav>
+
+  
+  <body>
+
+<section id="pics">
+    
+<div class="galary"><h1>Galeri</h1></div>
+
+
+<div class="image-gallery">
+    <div class="gallery-item">
+        <img src="g1.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+        <img src="g2.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+        <img src="g3.jpg" alt="Image 3">
+    </div>
+   <div class="gallery-item">
+        <img src="g4.jpg" alt="Image 3">
+    </div>
+   <div class="gallery-item">
+        <img src="g5.jpg" alt="Image 3" height="400px">
+    </div>
+   <div class="gallery-item">
+        <img src="g6.jpg" alt="Image 3">
+    </div>
+    <div class="gallery-item">
+        <img src="g7.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+        <img src="g8.jpg" alt="Image 1">
+    </div>
+
+</div>
+</section>
+
+
+
+   
+
+
+
+
+ <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Hızlı bağlantılar</h3>
+            <ul>
+                <li><a href="bayer.html">Ana Sayfa</a></li>
+                <li><a href="gallary.html">Galeri</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Veri ve Gizlilik</h3>
+            <ul>
+                <li><a href="#">Veri koruma</a></li>
+                <li><a href="#">Künye</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-info">
+            <h3>Bize ulaşın</h3>
+            <p><strong>Telefon:</strong> +90(232) 3653035</p>
+            <p><strong>FAX:</strong> +90(232) 3653036</p>
+            <p><strong>Email:</strong> İnfo@egeliboya.com</p>
+            <p><strong>Adres:</strong> Karacaoğlan, 6172. Sk. No:1, 35070 Bornova/İzmir, Türkei</p>
+        </div>
+    </div>
+</footer>
+</html>

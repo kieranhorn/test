@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="bayer.html">Ana Sayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Autorefinishes.html">Products</a></li>
+                <li><a href="location.html">Konum</a></li>
+                <li><a href="gallary.html">Galeri</a></li>
+                <li><a href="contact.html" class="contact">İletişim</a></li>
+    </ul>
+</nav>
+<body>
+  <div class="container">
+    <h2>Bizimle iletişime geçin</h2>
+    <form action="mailto:info@egeliboya.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="topic">Konu başlığı:</label>
+        <select id="topic" name="topic" required>
+          <option value="">Konu Başlığı Seç</option>
+          <option value="General Inquiry">Genel Bilgi</option>
+          <option value="Feedback">Geri Dönüş</option>
+          <option value="Support">Destek</option>
+          <option value="Other">Diğer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="full-name">Ad-Soyad:</label>
+        <input type="text" id="full-name" name="Ad-Soyad" required>
+      </div>
+      <div class="form-group">
+        <label for="Email Adres">Email Adres:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="Şirket ismi">Şirket ismi:</label>
+        <input type="text" id="company" name="Şirket ismi">
+      </div>
+      <div class="form-group">
+        <label for="Mesaj Gönder">Mesaj Gönder:</label>
+        <textarea id="message" name="Mesaj Gönder" rows="5" required></textarea>
+      </div>
+      <button type="submit">Mesajı Gönder</button>
+    </form>
+  </div>
+  <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
